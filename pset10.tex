@@ -23,34 +23,86 @@
 \question 
   Show that the two given sets have equal cardinality by describing a bijection from one to the other. Describe your bijection with a formula (not as a table). You need not include a proof of bijection.
   \begin{parts}
+  
   \part The set of even integers and the set of odd integers
     \begin{solution}
-      % Enter your solution here.
+    
+    $f$ : $E \implies O$\\
+    The function can be written as:\\
+    $f(n)$ : $n-1$ where n is any even integer.\\
+    Claim $f(n)$ is injective:\\
+    Suppose $f(a)= f(b)$\\
+     $a-1 = b-1$ \\
+     $a = b$\\
+     This shows that the function is 1 to 1.\\
+     Claim $f(n)$ is surjective:\\
+     $f(n)$ : $n-1$\\
+     $f(y)$ = $x-1$\\
+     $x = y+1$\\
+     Hence the function is onto.\\
+     We can conclude that the function is bijective.     
     \end{solution}
     
   \part $\Z$ and $S = \{..., \frac{1}{8}, \frac{1}{4}, \frac{1}{2}, 1, 2, 4, 8, 16, ...\}$
     \begin{solution}
-      % Enter your solution here.
+    
+      set $S$ can also be written as S=\{2n:n$\in$ Z\}\\
+      $f: Z \implies S$\\    
+      $f(x)=2^x$\\
+    Because set S follows a sequence, we can say that S has the same cardinality as N. We also know that Z has the same cardinality as N. Therefore, both Z and S have the same cardinality, which implies that a bijection between the two exists.
     \end{solution}
 
   \part $\Z^+$ and $S = \{2^n : n \in \Z^+\}$
     \begin{solution}
-      % Enter your solution here.
+    
+      S=\{2,4,8,26,32..\}\\
+      Since members of set S follow a sequence, we can say that the cardinality of set S is equal to the cardinality of N.\\
+      We know that there exists a bijection between $Z+$ and N.\\
+      Therefore we can conclude that $Z+$ and S have equal cardinality 
     \end{solution}
     
   \part $A = \{3k : k \in \Z\}$ and $B = \{7k : k \in \Z\}$
     \begin{solution}
-      % Enter your solution here.
+      
+     Set A is the set of all integers multiplied by 3, and set B is the set of all integers multiplied by 7. We know that $Z$ has the same cardinality as $N$; therefore, both set A and set B will have equal cardinalities, implying that a bijection exists between the two sets.
     \end{solution}
     
   \part $\R$ and $S=\{x\in\R\mid x>0 \}$
     \begin{solution}
-      % Enter your solution here.
+      
+       $f: R \implies S$\\
+      $f(x)=x+1$\\
+      To prove that the function is bijective, we need to prove that it is both Injective and Surjective:\\
+      Claim 1: the function is injective:\\
+      Consider $x1 and x2$\\
+      $f(x1)=x1+1$ and $f(x2)=x2+1$\\
+       $f(x1)=x1 = f(x2)=x2$\\
+       Hence proved that the function is injective.\\
+       Claim 2: the function is surjective:\\
+         $y=x+1$\\
+          $y-1=x$\\
+        Hence proved that the function is surjective.\\
+        Therefore the sets are bijective and have the same cardinality
+      
     \end{solution}
     
   \part $\R$ and $S=\{x\in\R\mid x>\sqrt{2} \}$
     \begin{solution}
-      % Enter your solution here.
+      
+      $f: R \implies S$\\
+      $f(x)=x+\sqrt{2}$\\
+      To prove that the function is bijective, we need to prove that it is both Injective and Surjective:\\
+      Claim 1: the function is injective:\\
+      Consider $x1 and x2$\\
+      $f(x1)=x1+\sqrt{2}$ and $f(x2)=x2+\sqrt{2}$\\
+       $f(x1)=x1 = f(x2)=x2$\\
+       Hence proved that the function is injective.\\
+       Claim 2: the function is surjective:\\
+         $y=x+\sqrt{2}$\\
+          $y-\sqrt{2}=x$\\
+        Hence proved that the function is surjective.\\
+        Therefore the sets are bijective and have the same cardinality
+      
     \end{solution}
   \end{parts}
 
@@ -58,31 +110,40 @@
   \begin{parts}
   \part If $A = \{X \subseteq \Z^+ \mid X \text{ is finite}\}$, then $|A| = \aleph_0$.
     \begin{solution}
-      % Enter your solution here.
+    
+      Following direct proof:\\
+      We know that $X$ is the subset of positive integers and $X$ is finite.\\
+      Therefore the cardinality of set $A$ must be less then that of a countably infinite set.\\
+      then $|A| < \aleph_0$.
+      
     \end{solution}
-  \part The set $A = \{(m,n) \in \Z^+ \times \Z^+ \mid m \leq n\}$ is countably infinite.
-
+  \part The set $A = \{(m,n) \in \Z^+ \times \Z^+ \mid m \leq n\}$ is countably infinite.\\
     \begin{solution}
-      % Enter your solution here.
+     
+      Because the elements of the set can be written in a sequence and follow a pattern, we can say that the set A is countably infinite.
     \end{solution}
   \part The set $\Z \times \Q$ is countably infinite.
     \begin{solution}
-      % Enter your solution here.
+     
+      Because $Z$ is countably infinite and $Q$ is countably infinite, their cartesian product will also be countably infinite.
     \end{solution}
 
   \part If $A \subseteq B$ and there is an injection $g : B \to A$, then $|A| = |B|$.
     \begin{solution}
-      % Enter your solution here.
+      
+      From the definition of injection we know that each element of B is mapped to exactly one unique element of A, A is the subset of B, if B's element are all mapped to A then that means that both A and B have the same cardinality.
     \end{solution}
     
   \part  If $|A| = |B|$ and $|B| = |C|$, then $|A| = |C|$.
     \begin{solution}
-      % Enter your solution here.
+      
+      Using the transitive property of equality, we know that the cardinality of A is equal to B, and cardinality of B is equal to C, we can conclude that the cardinality of A is in fact equal to C. 
     \end{solution}
     
   \part If $A$ and $B$ are sets with $|A| = |B|$, then $|\mathcal{P}(A)| = |\mathcal{P}(B)|$.
     \begin{solution}
-      % Enter your solution here.
+     
+      $A$ and $B$ contain the same numbers of elements, then the number of subsets will also be equal which implies that their Power sets will also have the same cardinality.
     \end{solution}
   \end{parts}
   
